@@ -1,15 +1,40 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import { useState } from 'react'
 import './App.css'
+import LandingPage from './Pages/LandingPage'
+import Footer from './Components/Footer'
+import Header from './Components/Header'
+import About from './Pages/About'
+import License from './Pages/License'
+import Contact from './Pages/Contact'
+import DynamicCVGenerator from './Components/DynamicCVGenerator'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+    <Router>
+       <div className="app">
+   <Header />
+    <DynamicCVGenerator />  
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/About" element={<About />} />
+        <Route path="/License" element={<License />} />
+        <Route path="/Contact" element={<Contact />} />
+      </Routes>
+    
+      <main style={{ flex: 1}}>
+
+      </main>
+
+      <Footer />
+      </div>
+      </Router>
       
     </>
-  )
+  );
 }
 
-export default App
+export default App;
