@@ -11,7 +11,7 @@ function EducationCV(props) {
                 <div key={index}> 
                 <h2>{education.school} {education.gradYear}</h2>
                 <h3>Major: {education.degree}</h3>
-                {education.minor} && <h3>Minors: {education.minor}</h3>
+                {education.minor && <h3>Minors: {education.minor}</h3>}
                 </div>        
             ))}
         </div>

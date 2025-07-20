@@ -197,13 +197,13 @@ import pearl from '../assets/pearl.jpg';
 import pikes from '../assets/pikes.jpg';
 import rainier from '../assets/rainiernp.jpg';
 import raysplace from '../assets/raysplace.jpg';
-import sanddunes from '../assets/sanddunesnp.jpg';
+import sanddunes from '../assets/sanddunesnp1.jpg';
 import sanddunes2 from '../assets/sanddunesnp2.jpg';
 import sanddunes3 from '../assets/sanddunesnp3.jpg';
 import tetons from '../assets/tetonsnp.jpg';
 import yosemite from '../assets/yosemite.jpg';
 import zion from '../assets/zionnp.jpg';
-import zion2 from '../assets/zionnp2,jpg';
+import zion2 from '../assets/zionnp2.jpg';
 
 
 export const myPhotos = [

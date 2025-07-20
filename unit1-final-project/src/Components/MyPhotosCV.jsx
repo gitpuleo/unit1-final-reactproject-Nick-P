@@ -1,7 +1,7 @@
 import './MyPhotos.css';
 
 
-function MyPhotos(props) {
+function MyPhotosCV(props) {
 
     return (
         <div>
@@ -15,3 +15,5 @@ function MyPhotos(props) {
         </div>
     )
 }
+
+export default MyPhotosCV;

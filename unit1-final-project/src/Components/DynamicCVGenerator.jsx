@@ -20,7 +20,7 @@ import MyPhotsCV from './MyPhotosCV';
 function DynamicCVGenerator() {
     
     return(
-        <div>
+        <main>
             <EducationCV inputData={education} />
             <WorkHistoryCV inputData={workHistory} />
             <MyWritingCV inputData={myWriting} />
@@ -29,8 +29,8 @@ function DynamicCVGenerator() {
             <VolunteeringCV inputData={volunteering} /> 
             <InterestsCV inputData={interests} />
             <MyPhotsCV inputData={myPhotos} />
-            
-        </div>
+
+        </main>
     );
 }
 

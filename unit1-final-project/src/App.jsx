@@ -17,7 +17,7 @@ function App() {
     <Router>
        <div className="app">
    <Header />
-    <DynamicCVGenerator />  
+    
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/About" element={<About />} />
@@ -31,7 +31,7 @@ function App() {
 
       <Footer />
       </div>
-      </Router>
+    </Router>
       
     </>
   );
