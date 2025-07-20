@@ -12,6 +12,8 @@ import { volunteering } from "../utils/nfpCVData";
 import VolunteeringCV from "./VolunteeringCV";
 import { interests } from "../utils/nfpCVData";
 import InterestsCV from "./InterestsCV";
+import { myPhotos } from "../utils/nfpCVData";
+import MyPhotsCV from './MyPhotosCV';
 
 
 //parent component for my various segments of the CV, which will be passed the data from nfpCVData.js through props.
@@ -26,6 +28,7 @@ function DynamicCVGenerator() {
             <LicensesAndCertificationsCV inputData={licensesCertifications} />
             <VolunteeringCV inputData={volunteering} /> 
             <InterestsCV inputData={interests} />
+            <MyPhotsCV inputData={myPhotos} />
             
         </div>
     );

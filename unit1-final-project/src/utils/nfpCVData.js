@@ -107,11 +107,6 @@ export const myWriting = [
 
 ];
 
-export const myPhotos = [
-
-
-
-];
 
 export const volunteering = [
 {
@@ -141,8 +136,21 @@ description: "Monitored and analyzed geopolitical developments, policy changes, 
 ];
 
 export const interests = [
-    
+{
+ interest: "Political Economy of East Asia"
+},
 
+{
+ interest:"Economic Anthropology"
+},
+
+{
+ interest: "Data Analysis & Data Journalism"
+},
+
+{
+ interest: "Education"
+}
 
 ];
 
@@ -172,6 +180,145 @@ export const licensesCertifications = [
 
 {
  name: "Phi Beta Kappa Honor Society"
+}
+
+];
+
+
+import arcosanti from '../assets/arcosanti.jpg';
+import brycenp from '../assets/brycenp.jpg';
+import camp from '../assets/camp.jpg';
+import camp2 from '../assets/camp2.jpg';
+import crag from '../assets/crag.jpg';
+import craig2 from '../assets/crag2.jpg';
+import craterlake from '../assets/craterlake.jpg';
+import lassen from '../assets/lassennp.jpg';
+import pearl from '../assets/pearl.jpg';
+import pikes from '../assets/pikes.jpg';
+import rainier from '../assets/rainiernp.jpg';
+import raysplace from '../assets/raysplace.jpg';
+import sanddunes from '../assets/sanddunesnp.jpg';
+import sanddunes2 from '../assets/sanddunesnp2.jpg';
+import sanddunes3 from '../assets/sanddunesnp3.jpg';
+import tetons from '../assets/tetonsnp.jpg';
+import yosemite from '../assets/yosemite.jpg';
+import zion from '../assets/zionnp.jpg';
+import zion2 from '../assets/zionnp2,jpg';
+
+
+export const myPhotos = [
+{
+ title: "Arcosanti",
+ img: arcosanti,
+ alt: "View of Arcosanti, Arizona main building"
+},
+
+{
+ title: "Bryce National Park",
+ img: brycenp,
+ alt: "View of Bryce canyon pillar formations"
+},
+
+{
+ title: "Camp Site",
+ img: camp,
+ alt: "Dusk cooking at a campsite outside Zion National Park"
+},
+
+{
+ title: "PNW Camp Site",
+ img: camp2,
+ alt: "Pitching camp by a stream outside Olympic National Park"
+},
+
+{
+ title: "Large Crag",
+ img: crag,
+ alt: "Dramatic aerial view of craig in dry environment"
+},
+
+{
+title: "Crag and stump",
+img: craig2,
+alt: "Same crag plus gnarled stump"
+},
+
+{
+ title: "Crater Lake National Park",
+ img: craterlake,
+ alt: "View from the rim of Crater Lake National Park in Oregon"
+},
+
+{
+ title: "Lassen Cinder Cone",
+ img: lassen,
+ alt: "View of the top of a cinder cone formation in Lassen Volcanic National Park"
+},
+
+{
+ title: "Pearl in the Mud",
+ img: pearl,
+ alt: "A Toyota Highlander thoroughly stuck in a muddy road"
+},
+
+{
+ title: "Pike's Peak Summit",
+ img: pikes,
+ alt: "View of the tor at the summit of Pike's Peak"
+},
+
+{
+ title: "Rainier",
+ img: rainier,
+ alt: "Moss growing along a mountain stream on Mount Rainier"
+},
+
+{
+ title: "Ray's Place",
+ img: raysplace,
+ alt: "The neon beer signs of Ray's bar are reflected in Ray's glasses, his frail hands in the background"
+},
+
+{
+ title: "Great Sand Dunes National Park",
+ img: sanddunes,
+ alt: "A View of the sand dunes at Colorado's Great Sand Dunes National Park with mountains in the background and scraggly brush in the foreground"
+},
+
+{
+ title: "Great Sand Dunes 2",
+ img: sanddunes2,
+ alt: "The ridge of a sand dune with wind blowing sand off its crown"
+},
+
+{
+ title: "Great Sand Dunes 3",
+ img: sanddunes3,
+ alt: "Great Sand Dunes lit red by a sunset"
+},
+
+{
+ title: "Grand Tetons",
+ img: tetons,
+ alt: "This park's real, actual name is huge breasts national park, pictured here are the namesake mountains"
+},
+
+{
+ title: "Yosemite",
+ img: yosemite,
+ alt: "Yosemite National Park boardwalk"
+},
+
+{
+ title: "Zion",
+ img: zion,
+ alt: "Zion National Park from its highest point, with my dear friend in the foreground"
+},
+
+{
+ title: "Zion Valley",
+ img: zion2,
+ alt: "Another view of Zion from its highest accesible point"
 }
 
 ];
