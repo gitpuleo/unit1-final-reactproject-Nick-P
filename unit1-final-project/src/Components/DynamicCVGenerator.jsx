@@ -13,8 +13,9 @@ import VolunteeringCV from "./VolunteeringCV";
 import { interests } from "../utils/nfpCVData";
 import InterestsCV from "./InterestsCV";
 import { myPhotos } from "../utils/nfpCVData";
-import MyPhotsCV from './MyPhotosCV';
+import MyPhotosCV from './MyPhotosCV';
 import ComponentSelector from "./ComponentSelector";
+import { useState } from 'react';
 
 
 
@@ -22,7 +23,7 @@ import ComponentSelector from "./ComponentSelector";
 //parent component for my various segments of the CV, which will be passed the data from nfpCVData.js through props.
 function DynamicCVGenerator() {
     
-    //For handling state values passed up from the child components:
+    //For handling state values passed down to the child component:
     const [renderProfessional, setRenderProfessional] = useState(false);
     const [renderService, setRenderService] = useState(false);
     const [renderEducation, setRenderEducation ] = useState(false);
@@ -36,14 +37,22 @@ function DynamicCVGenerator() {
     
     return(
         <main>
-            <EducationCV inputData={education} />
-            <WorkHistoryCV inputData={workHistory} />
-            <MyWritingCV inputData={myWriting} />
-            <TechnicalSkillsCV inputData={technicalSkills} />
-            <LicensesAndCertificationsCV inputData={licensesCertifications} />
-            <VolunteeringCV inputData={volunteering} /> 
-            <InterestsCV inputData={interests} />
-            <MyPhotsCV inputData={myPhotos} />
+            {hasGenerated && renderEducation && <EducationCV inputData={education} />}
+            
+            {hasGenerated && renderProfessional && (
+                <WorkHistoryCV inputData={workHistory.filter(job => job.type === "professional")} />
+            )}
+
+            {hasGenerated && renderService && (
+                <WorkHistoryCV inputData={workHistory.filter(job => job.type === "service")} />
+            )}
+
+            {hasGenerated && renderWriting && <MyWritingCV inputData={myWriting} />}
+            {hasGenerated && renderTechskills && <TechnicalSkillsCV inputData={technicalSkills} />}
+            {hasGenerated && renderCertification && <LicensesAndCertificationsCV inputData={licensesCertifications} />}
+            {hasGenerated && renderVolunteering && <VolunteeringCV inputData={volunteering} />} 
+            {hasGenerated && renderInterest && <InterestsCV inputData={interests} />}
+            {hasGenerated && renderPhotos && <MyPhotosCV inputData={myPhotos} />}
             <ComponentSelector
               renderProfessional={renderProfessional}
               renderService={renderService}
