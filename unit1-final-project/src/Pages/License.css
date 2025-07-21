@@ -1,0 +1,20 @@
+
+.img-class {
+    display: block;
+    margin: 0 auto;
+    transition: box-shadow .05s ease;
+}
+
+.img-class:hover {
+    box-shadow: 0 12px 20px rgba(181, 180, 108, 0.9);
+}
+
+.download-paragraph {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.main-div {
+    margin: 40px auto;
+
+}
