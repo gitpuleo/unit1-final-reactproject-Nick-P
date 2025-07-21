@@ -7,7 +7,7 @@ import Header from './Components/Header'
 import About from './Pages/About'
 import License from './Pages/License'
 import Contact from './Pages/Contact'
-
+import '@fortawesome/fontawesome-free/css/all.min.css'
 
 function App() {
 

@@ -2,70 +2,113 @@ import { useState } from 'react';
 import './ComponentSelector.css';
 
 //This will incorporate useState in order to handle dynamically rendering the CV components. 
-function ComponentSelector() {
+function ComponentSelector(props) {
     const [openWork, setOpenWork] = useState(false);
     const [openSkills, setOpenSkills] = useState(false);
     const [openMisc, setOpenMisc] = useState(false);
 
+    //State to track selected components moved to parent component and passed down by props
+    
+
     return (
         <div className="sidenav">
             <button onClick={() => setOpenWork(prevValue => !prevValue)} className="dropdown-btn">Work History
-                <i className="caret-down"></i>
+                <i className="fas fa-caret-down"></i>
             </button>
             {openWork && (
             <div className="dropdown-container">
                 <label>
-                    <input type="checkbox" />
                     Professional
+                    <input
+                    type="checkbox"
+                    checked={props.renderProfessional}
+                    onChange={() => props.setRenderProfessional(prevValue => !prevValue)} 
+                    />
                 </label>
                 <label>
-                    <input type="checkbox" />
                     Service
+                    <input 
+                    type="checkbox"
+                    checked={props.renderService}
+                    onChange={() => props.setRenderService(prevValue => !prevValue)}
+                     />
                 </label>
             </div>
             )}
-            <label>
-                <input type="checkbox" />
+            <label className="no-drop-btn">
                 Education
+                <input 
+                type="checkbox"
+                checked={props.renderEducation}
+                onChange={() => props.setRenderEducation(prevValue => !prevValue)}
+                 />
             </label>
             <button onClick={() => setOpenSkills(prevValue => !prevValue)} className="dropdown-btn">Technical Skills
-                <i className="caret-down"></i>
+                <i className="fas fa-caret-down"></i>
             </button>
             {openSkills && (
             <div className="dropdown-container">
                 <label>
-                    <input type="checkbox" />
                     Technical Skills
+                    <input 
+                    type="checkbox"
+                    checked={props.renderTechskills}
+                    onChange={() => props.setRenderTechskills(prevValue => !prevValue)}
+                     />
                 </label>
                 <label>
-                    <input type="checkbox" />
                     Licenses & Certifications
+                    <input
+                    type="checkbox"
+                    checked={props.renderCertification}
+                    onChange={() => props.setRenderCertification(prevValue => !prevValue)}
+                     />
                 </label>
             </div>
             )}
             <button onClick={() => setOpenMisc(prevValue => !prevValue)} className="dropdown-btn">Miscellaneous
-                <i className="caret-down"></i>
+                <i className="fas fa-caret-down"></i>
             </button>
             {openMisc && (
             <div className="dropdown-container">
                 <label>
-                    <input type="checkbox" />
                     Volunteering
+                    <input 
+                    type="checkbox"
+                    checked={props.renderVolunteering}
+                    onChange={() => props.setRenderVolunteering(prevValue => !prevValue)}
+                     />
                 </label>
                 <label>
-                    <input type="checkbox" />
                     Interests
+                    <input 
+                    type="checkbox"
+                    checked={props.renderInterest}
+                    onChange={() => props.setRenderInterests(prevValue => !prevValue)}
+                     />
                 </label>
             </div>
             )}
-            <label>
-                <input type="checkbox" />
+            <label className="no-drop-btn">
                 Writing
+                <input 
+                type="checkbox"
+                checked={props.renderWriting}
+                onChange={() => props.setRenderWriting(prevValue => !prevValue)}
+                 />
             </label>
-            <label>
-                <input type="checkbox" />
+            <label className="no-drop-btn">
                 Photos
+                <input 
+                type="checkbox"
+                checked={props.renderPhotos}
+                onChange={() => props.setRenderPhotos(prevValue => !prevValue)}
+                 />
             </label>
+            <br/>
+            <button 
+            className="generate-btn"
+            onClick={() => props.setHasGenerated(true)}>Generate</button>
         </div>
     );
 }

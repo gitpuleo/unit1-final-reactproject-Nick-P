@@ -3,7 +3,7 @@ import ComponentSelector from '../Components/ComponentSelector';
 
 function LandingPage() {
     return(
-        <div>
+        <div className="landing-page">
             <h1>Welcome message of some sort</h1>
             <DynamicCVGenerator />
             <ComponentSelector />

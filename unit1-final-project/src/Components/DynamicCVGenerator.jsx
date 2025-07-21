@@ -14,10 +14,25 @@ import { interests } from "../utils/nfpCVData";
 import InterestsCV from "./InterestsCV";
 import { myPhotos } from "../utils/nfpCVData";
 import MyPhotsCV from './MyPhotosCV';
+import ComponentSelector from "./ComponentSelector";
+
+
 
 
 //parent component for my various segments of the CV, which will be passed the data from nfpCVData.js through props.
 function DynamicCVGenerator() {
+    
+    //For handling state values passed up from the child components:
+    const [renderProfessional, setRenderProfessional] = useState(false);
+    const [renderService, setRenderService] = useState(false);
+    const [renderEducation, setRenderEducation ] = useState(false);
+    const [renderTechskills, setRenderTechskills] = useState(false);
+    const [renderCertification, setRenderCertification] = useState(false);
+    const [renderVolunteering, setRenderVolunteering] = useState(false);
+    const [renderInterest, setRenderInterests] = useState(false);
+    const [renderWriting, setRenderWriting] = useState(false);
+    const [renderPhotos, setRenderPhotos] = useState(false);
+    const [hasGenerated, setHasGenerated] = useState(false);
     
     return(
         <main>
@@ -29,6 +44,28 @@ function DynamicCVGenerator() {
             <VolunteeringCV inputData={volunteering} /> 
             <InterestsCV inputData={interests} />
             <MyPhotsCV inputData={myPhotos} />
+            <ComponentSelector
+              renderProfessional={renderProfessional}
+              renderService={renderService}
+              renderEducation={renderEducation}
+              renderTechskills={renderTechskills}
+              renderCertification={renderCertification}
+              renderVolunteering={renderVolunteering}
+              renderInterest={renderInterest}
+              renderWriting={renderWriting}
+              renderPhotos={renderPhotos}
+              hasGenerated={hasGenerated}
+              setHasGenerated={setHasGenerated}
+              setRenderProfessional={setRenderProfessional}
+              setRenderService={setRenderService}
+              setRenderEducation={setRenderEducation}
+              setRenderTechskills={setRenderTechskills}
+              setRenderCertification={setRenderCertification}
+              setRenderVolunteering={setRenderVolunteering}
+              setRenderInterests={setRenderInterests}
+              setRenderWriting={setRenderWriting}
+              setRenderPhotos={setRenderPhotos}
+            />
 
         </main>
     );
