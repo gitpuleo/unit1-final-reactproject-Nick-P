@@ -30,7 +30,7 @@ function DynamicCVGenerator() {
     const [renderTechskills, setRenderTechskills] = useState(false);
     const [renderCertification, setRenderCertification] = useState(false);
     const [renderVolunteering, setRenderVolunteering] = useState(false);
-    const [renderInterest, setRenderInterests] = useState(false);
+    const [renderInterest, setRenderInterest] = useState(false);
     const [renderWriting, setRenderWriting] = useState(false);
     const [renderPhotos, setRenderPhotos] = useState(false);
     const [hasGenerated, setHasGenerated] = useState(false);
@@ -71,7 +71,7 @@ function DynamicCVGenerator() {
               setRenderTechskills={setRenderTechskills}
               setRenderCertification={setRenderCertification}
               setRenderVolunteering={setRenderVolunteering}
-              setRenderInterests={setRenderInterests}
+              setRenderInterest={setRenderInterest}
               setRenderWriting={setRenderWriting}
               setRenderPhotos={setRenderPhotos}
             />

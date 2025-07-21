@@ -7,8 +7,7 @@ function ComponentSelector(props) {
     const [openSkills, setOpenSkills] = useState(false);
     const [openMisc, setOpenMisc] = useState(false);
 
-    //State to track selected components moved to parent component and passed down by props
-    
+    //State to track selected components moved to parent component and passed down by props  
 
     return (
         <div className="sidenav">
@@ -84,7 +83,7 @@ function ComponentSelector(props) {
                     <input 
                     type="checkbox"
                     checked={props.renderInterest}
-                    onChange={() => props.setRenderInterests(prevValue => !prevValue)}
+                    onChange={() => props.setRenderInterest(prevValue => !prevValue)}
                      />
                 </label>
             </div>

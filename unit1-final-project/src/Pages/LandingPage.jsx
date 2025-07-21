@@ -6,7 +6,6 @@ function LandingPage() {
         <div className="landing-page">
             <h1>Welcome message of some sort</h1>
             <DynamicCVGenerator />
-            <ComponentSelector />
         </div>
     )
 }
