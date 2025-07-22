@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
-import { useState } from 'react'
 import './App.css'
 import LandingPage from './Pages/LandingPage'
 import Footer from './Components/Footer'

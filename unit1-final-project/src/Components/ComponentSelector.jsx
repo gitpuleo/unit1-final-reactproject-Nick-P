@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import './ComponentSelector.css';
 
-//This will incorporate useState in order to handle dynamically rendering the CV components. 
+//This will incorporate useState in order to handle dynamically rendering the dropdown menus 
 function ComponentSelector(props) {
     const [openWork, setOpenWork] = useState(false);
     const [openSkills, setOpenSkills] = useState(false);
     const [openMisc, setOpenMisc] = useState(false);
 
-    //State to track selected components moved to parent component and passed down by props  
+    //State to track selected components moved to parent component and passed down by props here 
 
     return (
         <div className="sidenav">

@@ -11,6 +11,7 @@ function NavBar() {
                 <Link to="/License">License</Link>
                 <Link to="/Contact">Contact Me</Link>
             </nav>
+            <h2 className="header-site-title">Dynamic CV</h2>
         </div>
     )
 }

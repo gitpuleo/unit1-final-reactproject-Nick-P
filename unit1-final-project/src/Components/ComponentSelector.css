@@ -1,6 +1,6 @@
 .sidenav {
   height: calc(100% - 60px);
-  width: 130px;
+  width: 132px;
   position: fixed;
   z-index: 1;
   top: 49px;
@@ -79,7 +79,7 @@
 
 .dropdown-btn, .sidenav label {
     font-size: 15px;
-    color:aliceblue;
+    color:rgb(255, 255, 255);
     padding: 8px 12px;
     display: flex;
     align-items: center;
@@ -90,6 +90,21 @@
 .generate-btn {
     display: block;
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 18px;
+    text-decoration: white;
+    color: white;
+    background-color: #723f3f;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 2px;
+}
+
+.generate-btn:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.sidenav {
+  background-color: #252525
 
 }

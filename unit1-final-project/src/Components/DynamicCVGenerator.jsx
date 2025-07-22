@@ -18,8 +18,6 @@ import ComponentSelector from "./ComponentSelector";
 import { useState } from 'react';
 
 
-
-
 //parent component for my various segments of the CV, which will be passed the data from nfpCVData.js through props.
 function DynamicCVGenerator() {
     
@@ -35,6 +33,7 @@ function DynamicCVGenerator() {
     const [renderPhotos, setRenderPhotos] = useState(false);
     const [hasGenerated, setHasGenerated] = useState(false);
     
+    //first part of main handles conditional rendering as well as ensuring nothing renders until the "Generate" button has been clicked. 
     return(
         <main>
             {hasGenerated && renderEducation && <EducationCV inputData={education} />}
