@@ -2,6 +2,10 @@
 
 
 .about-div {
-    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    min-height: 100vh;
     
 }

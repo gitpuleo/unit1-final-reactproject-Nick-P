@@ -1,6 +1,7 @@
 
 .img-class {
-    display: block;
+    max-width: 100%;
+    height: auto;
     margin: 0 auto;
     transition: box-shadow .05s ease;
 }
@@ -15,6 +16,10 @@
 }
 
 .main-div {
-    margin: 40px auto;
-
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
