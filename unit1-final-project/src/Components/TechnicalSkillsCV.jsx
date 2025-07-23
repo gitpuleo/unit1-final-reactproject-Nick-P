@@ -13,3 +13,8 @@ function TechnicalSkillsCV(props) {
 }
 
 export default TechnicalSkillsCV;
+
+
+
+
+//Use table for this one

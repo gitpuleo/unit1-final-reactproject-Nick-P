@@ -1,14 +1,12 @@
+
 .sidenav {
-  height: calc(100% - 60px);
   width: 132px;
-  position: fixed;
-  z-index: 1;
-  top: 49px;
-  left: 0;
-  background-color: #111;
-  overflow-x: visible;
-  padding-top: 20px;
+  background-color: #252525;
+  padding: 0rem;
+  height: 100vh;
+  box-sizing: border-box;
 }
+
 
 .sidenav label {
     display: flex;
@@ -102,9 +100,4 @@
 .generate-btn:hover {
   background-color: #ddd;
   color: black;
-}
-
-.sidenav {
-  background-color: #252525
-
 }

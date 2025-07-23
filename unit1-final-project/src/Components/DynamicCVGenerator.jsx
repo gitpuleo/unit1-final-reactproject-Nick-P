@@ -14,66 +14,32 @@ import { interests } from "../utils/nfpCVData";
 import InterestsCV from "./InterestsCV";
 import { myPhotos } from "../utils/nfpCVData";
 import MyPhotosCV from './MyPhotosCV';
-import ComponentSelector from "./ComponentSelector";
-import { useState } from 'react';
+import './DynamicCVGenerator.css';
 
 
 //parent component for my various segments of the CV, which will be passed the data from nfpCVData.js through props.
-function DynamicCVGenerator() {
+//^This has changed after refactor, clean up code comments
+function DynamicCVGenerator(props) {
     
-    //For handling state values passed down to the child component:
-    const [renderProfessional, setRenderProfessional] = useState(false);
-    const [renderService, setRenderService] = useState(false);
-    const [renderEducation, setRenderEducation ] = useState(false);
-    const [renderTechskills, setRenderTechskills] = useState(false);
-    const [renderCertification, setRenderCertification] = useState(false);
-    const [renderVolunteering, setRenderVolunteering] = useState(false);
-    const [renderInterest, setRenderInterest] = useState(false);
-    const [renderWriting, setRenderWriting] = useState(false);
-    const [renderPhotos, setRenderPhotos] = useState(false);
-    const [hasGenerated, setHasGenerated] = useState(false);
-    
-    //first part of main handles conditional rendering as well as ensuring nothing renders until the "Generate" button has been clicked. 
+    //Handles conditional rendering
     return(
         <main>
-            {hasGenerated && renderEducation && <EducationCV inputData={education} />}
+            {props.hasGenerated && props.renderEducation && <EducationCV inputData={education} />}
             
-            {hasGenerated && renderProfessional && (
+            {props.hasGenerated && props.renderProfessional && (
                 <WorkHistoryCV inputData={workHistory.filter(job => job.type === "professional")} />
             )}
 
-            {hasGenerated && renderService && (
+            {props.hasGenerated && props.renderService && (
                 <WorkHistoryCV inputData={workHistory.filter(job => job.type === "service")} />
             )}
 
-            {hasGenerated && renderWriting && <MyWritingCV inputData={myWriting} />}
-            {hasGenerated && renderTechskills && <TechnicalSkillsCV inputData={technicalSkills} />}
-            {hasGenerated && renderCertification && <LicensesAndCertificationsCV inputData={licensesCertifications} />}
-            {hasGenerated && renderVolunteering && <VolunteeringCV inputData={volunteering} />} 
-            {hasGenerated && renderInterest && <InterestsCV inputData={interests} />}
-            {hasGenerated && renderPhotos && <MyPhotosCV inputData={myPhotos} />}
-            <ComponentSelector
-              renderProfessional={renderProfessional}
-              renderService={renderService}
-              renderEducation={renderEducation}
-              renderTechskills={renderTechskills}
-              renderCertification={renderCertification}
-              renderVolunteering={renderVolunteering}
-              renderInterest={renderInterest}
-              renderWriting={renderWriting}
-              renderPhotos={renderPhotos}
-              hasGenerated={hasGenerated}
-              setHasGenerated={setHasGenerated}
-              setRenderProfessional={setRenderProfessional}
-              setRenderService={setRenderService}
-              setRenderEducation={setRenderEducation}
-              setRenderTechskills={setRenderTechskills}
-              setRenderCertification={setRenderCertification}
-              setRenderVolunteering={setRenderVolunteering}
-              setRenderInterest={setRenderInterest}
-              setRenderWriting={setRenderWriting}
-              setRenderPhotos={setRenderPhotos}
-            />
+            {props.hasGenerated && props.renderWriting && <MyWritingCV inputData={myWriting} />}
+            {props.hasGenerated && props.renderTechskills && <TechnicalSkillsCV inputData={technicalSkills} />}
+            {props.hasGenerated && props.renderCertification && <LicensesAndCertificationsCV inputData={licensesCertifications} />}
+            {props.hasGenerated && props.renderVolunteering && <VolunteeringCV inputData={volunteering} />} 
+            {props.hasGenerated && props.renderInterest && <InterestsCV inputData={interests} />}
+            {props.hasGenerated && props.renderPhotos && <MyPhotosCV inputData={myPhotos} />}
 
         </main>
     );

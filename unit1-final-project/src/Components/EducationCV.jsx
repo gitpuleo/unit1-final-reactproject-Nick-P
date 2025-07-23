@@ -9,7 +9,7 @@ function EducationCV(props) {
         <div>
             {props.inputData.map((education, index) => (
                 <div key={index}> 
-                <h2>{education.school} {education.gradYear}</h2>
+                <h2>{education.school} Graduated: {education.gradYear}</h2>
                 <h3>Major: {education.degree}</h3>
                 {education.minor && <h3>Minors: {education.minor}</h3>}
                 </div>        

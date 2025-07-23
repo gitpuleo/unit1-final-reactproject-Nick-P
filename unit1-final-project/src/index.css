@@ -10,7 +10,6 @@ html, body {
     background-color: rgb(230, 225, 225);
 }
 
-.landing-page {
-    margin-left: 130px;
-    padding: 20px;
+body {
+    font-family: serif;
 }
