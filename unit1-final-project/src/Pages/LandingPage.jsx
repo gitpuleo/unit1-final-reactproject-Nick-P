@@ -44,7 +44,9 @@ function LandingPage() {
             />
             <div className='intro-lander'>
             {!hasGenerated &&(
-            <section>
+
+
+            <div>
             <header>
               <h1>Welcome to Dynamic CV!</h1>
             </header>
@@ -57,7 +59,7 @@ function LandingPage() {
             <p>
             Enjoy the concept? Navigate to the License page to download the application for free. Add your data in the CVData.js file in the utils folder to render your own CV. All objects are extensible. See the ReadMe for guidance on substituting your own information. Enjoy and be good.
             </p>
-            </section>
+            </div>
             )}
             <section className='main-cv'>
             <DynamicCVGenerator

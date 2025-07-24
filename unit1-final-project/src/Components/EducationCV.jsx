@@ -22,7 +22,7 @@ function EducationCV(props) {
                 <td>{education.degree}</td>
                 <td>{education.school}</td>
                 <td>{education.gradYear}</td>
-                <td>{education.minor && <td>{education.minor}</td>}</td>
+                <td>{education.minor ? education.minor : " "}</td>
                 </tr>
                  ))}
             </tbody>
