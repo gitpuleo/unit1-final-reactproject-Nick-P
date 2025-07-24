@@ -7,7 +7,7 @@ function ComponentSelector(props) {
   const [openSkills, setOpenSkills] = useState(false);
   const [openMisc, setOpenMisc] = useState(false);
 
-  //In the return statement, the state variables from the parent component are passed down as props and acted on by the event listeners, which update state based on user interaction and send that information back up to the parent component.
+  //Updates state based on user interaction and sends that information back up to the parent component.
 
   return (
     <div className="sidenav">
