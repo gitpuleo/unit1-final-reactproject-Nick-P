@@ -10,7 +10,7 @@ function MyPhotosCV(props) {
             {props.inputData.map((photo, index) => (
                 <figure key={index}>
                     <img src={photo.img} alt={photo.alt} className="photo-box" />
-                    <figcaption>{photo.title}</figcaption>
+                    <p>{photo.title}</p>
                 </figure>
              ))}    
             </div>    

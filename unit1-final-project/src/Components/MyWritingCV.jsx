@@ -4,7 +4,7 @@ function MyWritingCV(props) {
 
     return (
         <div>
-            <h2>Writing</h2>
+            <h3>Writing</h3>
             {props.inputData.map((article, index) => (
                 <div key={index}>
                     <a href={article.link} target="_blank">

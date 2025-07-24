@@ -29,6 +29,7 @@ function Contact() {
     return(
         <div className="contact-form">
             <h1>I'd love to hear your thoughts</h1>
+            <h2>(On anything, really)</h2>
             <br />
             <MultiUseForm 
             submitBtnText={"Submit Query"}

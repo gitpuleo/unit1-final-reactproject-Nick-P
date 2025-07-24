@@ -20,7 +20,7 @@ import { useState } from "react";
 
 
 //parent component for my various segments of the CV, which will be passed the data from nfpCVData.js through props.
-//^This has changed after refactor, clean up code comments
+//^This has changed after refactor, clean up code comments accordingly
 function DynamicCVGenerator(props) {
 
     const [submittedMessage, setSubmittedMessage] = useState("");
