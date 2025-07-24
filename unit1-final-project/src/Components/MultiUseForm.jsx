@@ -1,6 +1,7 @@
 import { useState } from "react";
 import './MultiUseForm.css';
 
+//Contact form also doubles as form for inquiry after CV with different styling and labels
 function MultiUseForm(props) {
 
     const [name, setName] = useState("");

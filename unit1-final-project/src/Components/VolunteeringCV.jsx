@@ -1,15 +1,20 @@
+import './VolunteeringCV.css';
 
 function VolunteeringCV(props) {
 
     return (
-        <div>
-            <h2>Volunteering</h2>
-            {props.inputData.map((volunteer, index) => (
-                <div key={index}>
-                    <h2>{volunteer.name}, {volunteer.dateRange}</h2>
-                    <h3>{volunteer.description}</h3>
-                </div>    
-            ))}
+        <div className='volunteering'>
+            <h3>Volunteering</h3>
+            <ul>
+              {props.inputData.map((volunteer, index) => (
+                <li key={index}>
+                    <strong>{volunteer.name}</strong>
+                    <span> | {volunteer.dateRange}</span>
+                    <p>{volunteer.description}</p>
+                </li>    
+                ))}  
+            </ul>
+            
         </div>
     );
 }

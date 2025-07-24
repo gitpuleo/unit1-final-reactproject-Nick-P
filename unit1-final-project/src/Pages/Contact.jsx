@@ -28,6 +28,8 @@ function Contact() {
 
     return(
         <div className="contact-form">
+            <h1>I'd love to hear your thoughts</h1>
+            <br />
             <MultiUseForm 
             submitBtnText={"Submit Query"}
             submitBehavior={feedbackFunction}

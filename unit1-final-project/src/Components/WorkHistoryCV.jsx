@@ -1,13 +1,18 @@
+import './WorkHistoryCV.css';
 
 function WorkHistoryCV(props) {
 
     return (
         <div>
+            <h3>Work History</h3>
             {props.inputData.map((job, index) => (
-                <div key={index}>
-                    <h2>{job.employer}, {job.location}, {job.dateRange}</h2>
-                    <h3>{job.description}</h3>
-                </div>        
+                <li key={index} className="job-section">
+                    <span>{job.employer} </span>
+                    <br />
+                    <span>{job.location} </span>
+                    <span> | {job.dateRange} </span>
+                    <p>{job.description}</p>
+                </li>        
             ))}
         </div>
     );

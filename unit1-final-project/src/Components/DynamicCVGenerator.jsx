@@ -26,7 +26,7 @@ function DynamicCVGenerator(props) {
     const [submittedMessage, setSubmittedMessage] = useState("");
 
     function feedbackFunction(name, email, text) {
-        let messagePreview = `Thank you for your inquiry, ${name}. Your inquiry has has been recieved as follows (feel free to edit before final submission): \n ${text}`;
+        let messagePreview = `Thank you for your inquiry, ${name}. Your inquiry has has been recieved as follows: \n ${text}`;
         setSubmittedMessage(messagePreview);
     }
     

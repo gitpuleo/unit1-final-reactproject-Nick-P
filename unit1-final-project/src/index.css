@@ -3,6 +3,10 @@ html, body {
     margin: 0;
 }
 
+p {
+    line-height: 1.6;
+}
+
 #root {
     display: flex;
     flex-direction: column;

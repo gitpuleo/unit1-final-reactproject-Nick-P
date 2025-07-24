@@ -1,8 +1,32 @@
 
-h1 {
-    font-size: 1.5rem;
+
+
+.intro-lander {
+  padding-top: 1.5rem;
 }
 
+.intro-lander h1 {
+  font-size: 26px;
+  padding-left: 1rem;
+}
+
+.intro-lander h2 {
+  font-size: 22px;
+  padding-left: 1rem;
+
+}
+
+.intro-lander h3 {
+  text-decoration: underline dotted #723f3f;
+}
+
+.intro-lander p {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem;
+  line-height: 1.6;
+}
 
 .sidenav {
   width: 132px;
@@ -43,3 +67,4 @@ h1 {
     padding: 1rem;
   }
 }
+

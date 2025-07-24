@@ -1,14 +1,18 @@
+import './LicensesAndCertifications.css';
 
 function LicensesAndCertificationsCV(props) {
 
      return (
-        <div>
-            <h2>Writing</h2>
+        
+        <div className="certs">
+            <h3>Licenses & Certifications</h3>
+            <ul>
             {props.inputData.map((cert, index) => (
-                <div key={index}>
-                  <h2>{cert.name}</h2>
-                </div>
+                <li key={index}>
+                  <span>{cert.name}</span>
+                </li>
             ))}
+            </ul>
         </div>
     );
 }

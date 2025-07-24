@@ -17,9 +17,15 @@
 
 .main-div {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
     box-sizing: border-box;
+    padding-top: 2.5rem;
+}
+
+.main-div h2 {
+    font-size: 24px;
+    padding-top: 1rem;
 }

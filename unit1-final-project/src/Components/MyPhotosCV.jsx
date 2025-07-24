@@ -5,15 +5,17 @@ function MyPhotosCV(props) {
 
     return (
         <div>
-            <h2>Photos</h2>
+            <h3>Photos</h3>
+            <div className='gallery'>
             {props.inputData.map((photo, index) => (
-                <div key={index}>
+                <figure key={index}>
                     <img src={photo.img} alt={photo.alt} className="photo-box" />
-                    <h3>{photo.title}</h3>
-                </div>    
-            ))}
+                    <figcaption>{photo.title}</figcaption>
+                </figure>
+             ))}    
+            </div>    
         </div>
-    )
+    );
 }
 
 export default MyPhotosCV;

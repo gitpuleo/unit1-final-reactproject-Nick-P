@@ -3,16 +3,16 @@ function InterestsCV(props) {
 
     return (
         <div>
+            <h3>Interests</h3>
+            <ul>
             {props.inputData.map((interest, index) => (
-            <div key={index}>   
-               <h2>{interest.interest}</h2>
-            </div>
-            ))}    
-            </div>        
+                <li key={index}>{interest.interest}</li>
+            ))}  
+            </ul>
+        </div>        
     );
 }
 
 export default InterestsCV;
 
 
-//ordered list? List anyhow

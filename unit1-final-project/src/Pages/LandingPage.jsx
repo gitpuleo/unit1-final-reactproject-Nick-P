@@ -42,7 +42,9 @@ function LandingPage() {
               setRenderWriting={setRenderWriting}
               setRenderPhotos={setRenderPhotos}
             />
-            <div className='main-cv'>
+            <div className='intro-lander'>
+            {!hasGenerated &&(
+            <section>
             <header>
               <h1>Welcome to Dynamic CV!</h1>
             </header>
@@ -51,9 +53,13 @@ function LandingPage() {
             <h3> &larr; Choose on the side panel what information you would like to know about--in this case--me.</h3>
             <br/>
             <h3> &larr; Hit the 'Generate' button to render your selected elements.</h3>
-
+            <br />
             <p>
-            Enjoy the concept? Navigate to the License page to download the application for free. Add your data in the CVData.js file in the utils folder to render your own CV. All objects are extensible. See the ReadMe for guidance on substituting your own information. Enjoy.</p>
+            Enjoy the concept? Navigate to the License page to download the application for free. Add your data in the CVData.js file in the utils folder to render your own CV. All objects are extensible. See the ReadMe for guidance on substituting your own information. Enjoy and be good.
+            </p>
+            </section>
+            )}
+            <section className='main-cv'>
             <DynamicCVGenerator
             renderProfessional={renderProfessional}
             renderService={renderService}
@@ -66,6 +72,7 @@ function LandingPage() {
              renderPhotos={renderPhotos}
             hasGenerated={hasGenerated}
             />
+            </section>
             </div>
         </main>
     )
