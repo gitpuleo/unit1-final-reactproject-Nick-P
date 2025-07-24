@@ -1,6 +1,6 @@
 import './MyPhotos.css';
 
-
+//Return to: tried to refactor to make a W3Schools' HTML gallery work in React, but am currently stumped
 function MyPhotosCV(props) {
 
     return (

@@ -10,7 +10,7 @@ function Footer() {
                 >
                     GNU Affero General Public License v3
                 </a>
-                 </p>
+            </p>
         </div>
     );
 }

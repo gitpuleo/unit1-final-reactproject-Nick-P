@@ -15,11 +15,20 @@ import InterestsCV from "./InterestsCV";
 import { myPhotos } from "../utils/nfpCVData";
 import MyPhotosCV from './MyPhotosCV';
 import './DynamicCVGenerator.css';
+import MultiUseForm from "./MultiUseForm";
+import { useState } from "react";
 
 
 //parent component for my various segments of the CV, which will be passed the data from nfpCVData.js through props.
 //^This has changed after refactor, clean up code comments
 function DynamicCVGenerator(props) {
+
+    const [submittedMessage, setSubmittedMessage] = useState("");
+
+    function feedbackFunction(name, email, text) {
+        let messagePreview = `Thank you for your inquiry, ${name}. Your inquiry has has been recieved as follows (feel free to edit before final submission): \n ${text}`;
+        setSubmittedMessage(messagePreview);
+    }
     
     //Handles conditional rendering
     return(
@@ -40,7 +49,21 @@ function DynamicCVGenerator(props) {
             {props.hasGenerated && props.renderVolunteering && <VolunteeringCV inputData={volunteering} />} 
             {props.hasGenerated && props.renderInterest && <InterestsCV inputData={interests} />}
             {props.hasGenerated && props.renderPhotos && <MyPhotosCV inputData={myPhotos} />}
-
+            
+            {props.hasGenerated && 
+            <div className="query-form">
+                <h3>Have questions? I would love the chance to field them!</h3>
+                <br />
+                <MultiUseForm
+                submitBtnText="Send Inquiry"
+                submitBehavior={feedbackFunction}
+                />
+                {submittedMessage && (
+                    <div className="inquiry-preview">
+                        <p>{submittedMessage}</p>
+                    </div>
+                )}
+            </div>}
         </main>
     );
 }

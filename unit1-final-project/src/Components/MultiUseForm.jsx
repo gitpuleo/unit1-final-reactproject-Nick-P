@@ -1,6 +1,7 @@
 import { useState } from "react";
+import './MultiUseForm.css';
 
-function MultiUseForm(submitBtnText, submitBehavior) {
+function MultiUseForm(props) {
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -8,33 +9,41 @@ function MultiUseForm(submitBtnText, submitBehavior) {
 
     return (
         
-        <form onSubmit={(event) => {event.preventDefault();
-            submitBehavior(name, email, recordText)}}>
-            <label htmlFor="name-input">Name: </label>
+        <form
+            className="multi-form" 
+            onSubmit={(event) => {event.preventDefault();
+            props.submitBehavior(name, email, recordText)}}
+            >
+            <label htmlFor="name-input">Name:  </label>
             <input 
             type="text" 
             id="name-input"
             value={name}
             onChange={(event) => setName(event.target.value)}
-            /> <br/>
-            <label htmlFor="email-input">E-mail: </label>
+            required
+            /> 
+            <br/>
+            <label htmlFor="email-input">E-mail:  </label>
             <input 
             type="email" 
             id="email-input" 
             value={email}
             onChange={(event) => setEmail(event.target.value)}
-            /> <br />
-            <label htmlFor="text-input" >Feedback: </label>
+            required
+            /> 
+            <br/>
+            <label htmlFor="text-input" >Query:  </label>
             <textarea 
             id="text-input"
             name="feedback-contact"
             value={recordText}
             onChange={(event) => setRecordText(event.target.value)}
-            ></textarea><br/>
-            <button type="submit">{submitBtnText}</button><br/>
+            ></textarea>
+            <br/>
+            <button type="submit">{props.submitBtnText}</button>
+            <br/>
         </form>
 
-        
     );
 }
 
