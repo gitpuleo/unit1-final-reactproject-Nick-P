@@ -118,7 +118,7 @@ description: "Volunteer English language lessons for recently arrived Francophon
 {
 name: "DSA International Comittee Asia & Oceania Subcomittee",
 dateRange: "November 2019 - October 2021",
-description: "Monitored and analyzed geopolitical developments, policy changes, and domestic political dynamics in the Asia and Oceania region, producing regular reports for the national leadership of a 90,000+ member progressive advocacy non-profit. "
+description: "Appointed member; monitored and analyzed geopolitical developments, policy changes, and domestic political dynamics in the Asia and Oceania region, producing regular reports for the national leadership of a 90,000+ member progressive advocacy non-profit. "
 },
 
 {
@@ -129,8 +129,8 @@ description: "Monitored and analyzed geopolitical developments, policy changes, 
 
 {
  name: "Hosei University Film Club「英語で映画」",
- dateRange: "2024",
- description: "Established the first and only club at the university to be created by an international student, providing an interactive language learning experience through film."
+ dateRange: "2014",
+ description: "Established the first and only club at Hosei University to be created by an international student, providing an interactive language learning experience through film."
 }
 
 ];
@@ -175,11 +175,11 @@ export const licensesCertifications = [
  name: "Missouri Substitute Teaching License"
 },
 {
- name: "JLPT N4"
+ name: "JLPT N3"
 },
 
 {
- name: "Phi Beta Kappa Honor Society"
+ name: "ΦΒΚ Phi Beta Kappa Honor Society"
 }
 
 ];

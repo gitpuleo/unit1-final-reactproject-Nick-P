@@ -48,13 +48,11 @@ function LandingPage() {
 
             <div>
             <header>
-              <h1>Welcome to Dynamic CV!</h1>
-              <br />
+            <h1>Welcome to Dynamic CV!</h1>
             </header>
-            <h2>Dynamic CV is designed to rebalance a broken recruitment process, allowing candidates to supply their full CV, and obligating...  </h2>
-            <br/>
-            <h3> &larr; Choose on the side panel what information you would like to know about--in this case--me.</h3>
-            <br/>
+            <h2>Dynamic CV is designed to rebalance a broken recruitment process, allowing candidates to supply their full CV, and freighting the party with a more complete information set with the task of choosing relevance.</h2>
+            <h3> &larr; Choose on the side panel what information you would like to know about—in this case—me.</h3>
+            <br />
             <h3> &larr; Hit the 'Generate' button to render your selected elements.</h3>
             <br />
             <p>

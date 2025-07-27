@@ -1,9 +1,11 @@
+import './MyWritingCV.css';
+
 //Structured this way should allow extensibility when myWriting array is added to.
 
 function MyWritingCV(props) {
 
     return (
-        <div>
+        <div className='writing'>
             <h3>Writing</h3>
             {props.inputData.map((article, index) => (
                 <div key={index}>
