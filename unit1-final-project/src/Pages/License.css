@@ -28,10 +28,11 @@
 
 .main-div h2 {
     font-size: 24px;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .main-div h1 {
     text-decoration: underline dotted #723f3f;
-
+    font-size: 28px;
+    margin-top: 2.5rem;
 }

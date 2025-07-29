@@ -48,7 +48,7 @@ function Contact() {
                 value={editingMessage}
                 onChange={(event) => setEditingMessage(event.target.value)}/>
                 <br />
-                <button onClick={saveText}>Save</button>
+                <button className='save-btn' onClick={saveText}>Save</button>
             </div>
         )}
         </div>

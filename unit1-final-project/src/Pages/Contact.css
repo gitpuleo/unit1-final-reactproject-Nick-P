@@ -50,3 +50,18 @@
 .contact-form h2 {
     font-size: 22px;
 }
+
+.save-btn {
+    background-color: #723f3f;
+    color: white;
+    padding: .5rem 1.5rem;
+    border-radius: 5px;
+    display: block;
+    margin: 1rem auto;
+
+}
+
+.save-btn:hover {
+    background-color: #f0e5e5;
+    color: black;
+}
