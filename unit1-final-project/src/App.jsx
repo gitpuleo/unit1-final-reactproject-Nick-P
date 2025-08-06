@@ -23,9 +23,7 @@ function App() {
         <Route path="/Contact" element={<Contact />} />
       </Routes>
     
-      <main style={{ flex: 1}}>
-
-      </main>
+      
 
       <Footer />
       </div>

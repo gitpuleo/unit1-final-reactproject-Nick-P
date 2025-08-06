@@ -43,7 +43,7 @@ body {
     }
 
     .main-cv {
-        padding: 3.5vw;
+        padding: 3vw;
     }
 
     .sidenav {
@@ -54,6 +54,25 @@ body {
     .main-format {
         flex-direction: column;
     }
+
+@media (min-width: 1201px) {
+    body {
+        font-size: 1vw;
+    }
+
+    h1 {
+        font-size: 1.5vw;
+    }
+
+    .main-cv {
+        padding: 1.5vw;
+    }
+
+    .page-content {
+        padding: 1.5vw;
+    }
+}
+
 
     img {
        max-width: 100%; 

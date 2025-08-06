@@ -7,7 +7,7 @@ function ComponentSelector(props) {
   const [openSkills, setOpenSkills] = useState(false);
   const [openMisc, setOpenMisc] = useState(false);
 
-  //Updates state based on user interaction and sends that information back up to the parent component.
+  //Updates state based on user interaction and sends that information back up to the parent component via callback function
 
   return (
     <div className="sidenav">

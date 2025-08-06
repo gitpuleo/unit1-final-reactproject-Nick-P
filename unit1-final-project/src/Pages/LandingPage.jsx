@@ -5,7 +5,7 @@ import ComponentSelector from '../Components/ComponentSelector';
 
 function LandingPage() {
 
-    //For handling state values passed down to the child component:
+    //For handling state values updated by triggers from the child components:
     const [renderProfessional, setRenderProfessional] = useState(false);
     const [renderService, setRenderService] = useState(false);
     const [renderEducation, setRenderEducation ] = useState(false);
